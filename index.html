@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Post by SL Post Courier</title>
+    <!-- Favicon here-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Style here-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo-container">
+            <img src="logo.png" alt="SL Post Logo" class="site-logo">
+        </div>
+        <nav class="main-nav">
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <ul id="menuItems" class="menuItems">
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#tracking" class="nav-link">Tracking</a></li>
+                <li><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Speed Post by SL Post Courier</h1>
+        <p class="justify-text">Sri Lanka තැපැල් දෙපාර්තමේන්තුවේ Speed Post සේවාවේ බරට අදාළ මුදල ලබා ගැනීමට පහල Tool එක  භාවිත කරන්න. බර ග්‍රෑම් වලින් ඇතුලත් කරන්න, එවිට තැපැල් දෙපාර්තමේන්තුව Speed Post වලට අයකරන මුදල දර්ශනය වේ.</p>
+        <div class="card">
+            <h2>Calculate Fee</h2>
+            <input type="number" id="weightInput" placeholder="Enter weight in grams" onkeydown="if (event.key === 'Enter') calculateFee()">
+            <button onclick="calculateFee()">Calculate</button>
+            <button onclick="resetCalc()">Reset</button>
+            <p id="result"></p>
+        </div>
+        <div class="card">
+            <h2 id="tracking">SL Post Courier Tracking</h2>
+            <ul>
+                <li>Acceptance and delivery within own delivery zone – 24hrs</li>
+                <li>For delivery in areas out of own delivery zone- 48hrs</li>
+                <li>Date of delivery may be subjected to variation.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h2>SL Post Courier Tracking</h2>
+            <p>SL Post Courier Tracking is an online service to track your article that you sent to someone using speed post courier. By using SL Post Courier Tracking system, people can track whether their articles have been delivered or not.</p>
+            <p>You can find the tracking number (Barcode or Reference No.) on the receipt issued by the Post Office Counter at the time of accepting your article.</p>
+            <button onclick="window.location.href='http://www.slpmail.slpost.gov.lk/track/'">Track Item</button>
+            <button onclick="window.location.href='http://www.slpmail.slpost.gov.lk/tracklist/'">Track Batch Item</button>
+        </div>
+    </div>
+    <footer>
+        <p>For more details contact: <a href="tel:0714440440">071 444 0440</a> / <a href="tel:0112328112">011 232 8112</a><br>
+            Email: <a href="mailto:slpmailenquiry@gmail.com">slpmailenquiry@gmail.com</a></p>
+            <p>© 2024 SL Post. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

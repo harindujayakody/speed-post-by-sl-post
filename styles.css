@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f0f0;
+    color: #333;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+h1, h2 {
+    color: #333;
+}
+input, button, p {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+input {
+    border: 2px solid #ccc;
+    background: none;
+    color: #333;
+}
+button {
+    background: #ed0518;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+button:hover {
+    background: #e0301e;
+}
+.card {
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    margin-bottom: 10px;
+}
+nav {
+    background: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+nav img {
+    height: 50px;
+    display: block;
+    margin: 10px auto;
+}
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    margin: 0 10px;
+}
+nav a:hover {
+    color: #ed0518;
+}
+nav .nav-links {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    nav .nav-links {
+        display: none; /* Hide navigation links on mobile devices */
+    }
+}
+footer {
+    background: #cf1839;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    width: 100%;
+}
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+    }
+}
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Center menu items horizontally */
+    align-items: center;
+    margin-bottom: 20px; /* Add margin to separate logo and menu items */
+}
+
+.menuItems {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center; /* Center menu items horizontally */
+}
+
+.menuItems li {
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        display: none; /* Hide the entire navigation bar on mobile */
+    }
+
+    .menu-icon {
+        display: block; /* Display the menu icon on mobile */
+    }
+
+    .menuItems.active {
+        display: block; /* Show the menu items when active (mobile) */
+    }
+}
+/* Center Logo */
+.logo-container {
+    border-top: 5px solid #cf1839; /* Add a 2px solid border on top */
+    flex-grow: 1; /* Allow the logo container to grow and occupy available space */
+    display: flex;
+    justify-content: center; /* Center the logo horizontally */
+}
+
+.site-logo {
+    max-width: 100%; /* Ensure the logo doesn't exceed the container width */
+}
+/* White Header Background */
+.site-header {
+    background-color: #fff; /* White background color */
+    margin-bottom: 0; /* Remove margin bottom */
+}
+/* Responsive Logo Image */
+.site-logo {
+    max-width: 100%;
+    height: auto; /* Ensure the logo maintains its aspect ratio */
+}
+#result {
+    font-weight: bold;
+}
+@media (min-width: 769px) {
+    .site-logo {
+        max-width: 100%; /* Adjust the maximum width for desktop screens */
+    }
+}
+/* Add animation effect on menu item hover */
+.nav-link {
+    position: relative;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ed0518; /* Color of the underline */
+    transition: width 0.3s ease; /* Transition for the underline width */
+}
+
+.nav-link:hover::before {
+    width: 100%; /* Increase the width of the underline on hover */
+}
+body {
+    overflow-x: hidden;
+}
+.nav-link {
+    position: relative;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ed0518; /* Color of the underline */
+    transition: width 0.3s ease; /* Transition for the underline width */
+}
+
+.nav-link:hover::before {
+    width: 100%; /* Increase the width of the underline on hover */
+}
+body {
+    overflow-x: hidden;
+}
+
+/* Additional styles */
+.menuItems {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center; /* Center menu items horizontally */
+}
+
+.menuItems li {
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .menuItems {
+        display: none; /* Hide the entire navigation bar on mobile */
+    }
+
+    .menu-icon {
+        display: block; /* Display the menu icon on mobile */
+    }
+
+    .menuItems.active {
+        display: flex; /* Show the menu items when active (mobile) */
+        flex-direction: column; /* Stack menu items vertically */
+        align-items: center; /* Center menu items vertically */
+    }
+}
+
+/* Add styles for footer link */
+footer a {
+    color: white;
+    text-decoration: none;
+}
+.container h1 {
+    text-align: center; /* Center the text horizontally */
+}
+.card ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0;
+}
+
+.card ul li {
+    margin-bottom: 10px; /* Add margin between list items */
+}
+.justify-text {
+    text-align: justify;
+}
